@@ -1,9 +1,15 @@
-import Login from "./Componentrs/Login"
+import Signup from "./Componentrs/Signup"
+import Home from "./Componentrs/Home"
+import {BrowserRouter,Routes,Route} from "react-router-dom"
 function App() {
   return(
     <>
-      <h1 className=' bg-yellow-400'>Kodi potta</h1>
-      <Login />
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Signup />} />
+        <Route path="/Animelist" element={<Home />} />
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }

@@ -19,7 +19,7 @@ func main() {
 			"message": "Hello Everyone",
 		})
 	})
-	app.POST("/login",controller.Register)
+	app.POST("/signup",controller.Register)
 	app.Run()
 }
 func corsMiddleware() gin.HandlerFunc {
